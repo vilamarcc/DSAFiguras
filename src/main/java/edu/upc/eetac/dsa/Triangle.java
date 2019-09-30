@@ -40,21 +40,14 @@ public class Triangle extends Figura {
 
     //Contructores
     public Triangle(double base, double altura){
-        super(((base)*(altura))/2);
+        //super(((base)*(altura))/2);
         this.base = base;
         this.altura = altura;
         this.Nombre = "Figura " + Double.toString(Math.round(Math.random()*((15-1)+1))+1);
     }
 
-    public Triangle(double base, double altura, String Nombre){
-        super(((base)*(altura))/2);
-        this.base = base;
-        this.altura = altura;
-        this.Nombre = Nombre;
-    }
-
     public Triangle(int base, int altura){
-        super(((base)*(altura))/2);
+        //super(((base)*(altura))/2);
         this.base = base;
         this.altura = altura;
         this.Nombre = "Figura " + Double.toString(Math.round(Math.random()*((15-1)+1))+1);

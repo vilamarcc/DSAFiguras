@@ -5,6 +5,8 @@ import org.junit.Before;
 import org.junit.Test;
 import edu.upc.eetac.dsa.*;
 
+import java.util.Arrays;
+
 
 public class GestorFiguresTest {
     Figura[] array=null;
@@ -17,7 +19,7 @@ public class GestorFiguresTest {
         array[2]  = new Cercle(7.0);
         array[3] = new Rectangle(8,9);
         array[4] = new Cercle(14);
-        array[5] = new Quadrat(5);
+        array[5] = new Quadrat(1);
     }
 
     @Test
@@ -32,6 +34,13 @@ public class GestorFiguresTest {
 
     @Test
     public void testSort() {
-        //GestorFigures.sort(array);
+        Assert.assertEquals("sort", Cercle.class, array[0].getClass());
+        Assert.assertEquals("sort", Triangle.class, array[1].getClass());
+        System.out.println(Arrays.asList(array));
+        GestorFigures.sort(array);
+        Assert.assertEquals("sort", Quadrat.class, array[0].getClass());
+        Assert.assertEquals("sort", Cercle.class, array[1].getClass());
+        Assert.assertEquals("sort", Triangle.class, array[2].getClass());
+
     }
 }
