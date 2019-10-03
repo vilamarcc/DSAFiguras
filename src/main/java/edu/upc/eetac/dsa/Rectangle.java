@@ -30,7 +30,6 @@ public class Rectangle extends Figura{
 
     //Contructores
     public Rectangle(double base, double altura){
-        //super(base*altura);
         this.base = base;
         this.altura = altura;
     }

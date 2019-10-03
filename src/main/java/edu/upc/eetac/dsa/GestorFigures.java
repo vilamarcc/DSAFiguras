@@ -16,7 +16,7 @@ public interface GestorFigures  {
             areaTotal += f.getArea();
         }
         return areaTotal;
-    };
+    }
     public static void sort(Figura[] l){
          Arrays.sort(l);
     }

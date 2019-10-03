@@ -27,7 +27,6 @@ public class Cercle extends Figura{
     //Constructores
 
     public Cercle(double radio){
-    //    super((Math.PI)*(Math.pow(radio,2)));
         this.Radio = radio;
         this.Nombre = "Figura " + Double.toString(Math.round(Math.random()*((15-1)+1))+1);
     }

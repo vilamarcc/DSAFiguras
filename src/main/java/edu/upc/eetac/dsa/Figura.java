@@ -4,10 +4,8 @@ public abstract class Figura implements Comparable<Figura> {
     //Atributos
     private String Nombre;
 
-    //Getters and setters
-    public abstract double getArea(); /* {
-        return this.Area;
-    }*/
+    //Getters
+    public abstract double getArea();
 
     //Constructores
 
